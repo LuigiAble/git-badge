@@ -5,7 +5,7 @@ export default class LoginPageModel {
     this.emailFieldText = Selector("#session_email");
     this.passwordFieldText = Selector("#session_password");
     this.logInButton = Selector("input").withAttribute("name", "commit");
-    alert("This is a test 2")
+    alert("This is a test 2-1")
   }
 
   async login(userInformation) {
@@ -13,6 +13,6 @@ export default class LoginPageModel {
       .typeText(this.emailInputText, userInformation.email, { paste: false })
       .typeText(this.passwordInputText, userInformation.password)
       .click(this.logInButton);
-      console.log("Hello World 2019")
+      console.log("Hello World 2019-1")
   }
 }
