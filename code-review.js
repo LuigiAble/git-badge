@@ -6,6 +6,7 @@ export default class LoginPageModel {
     this.passwordFieldText = Selector("#session_password");
     this.logInButton = Selector("input").withAttribute("name", "commit");
     alert("This is a test 2-1")
+    console.log("XD")
   }
 
   async login(userInformation) {
@@ -14,5 +15,6 @@ export default class LoginPageModel {
       .typeText(this.passwordInputText, userInformation.password)
       .click(this.logInButton);
       console.log("Hello World 2019-1")
+      console.error("Error")
   }
 }
